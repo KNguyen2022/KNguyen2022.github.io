@@ -25,3 +25,26 @@ figcaption{
 nav{
     text-align: center;
 }
+
+/*
+* Table Styles
+*/
+table{
+    width: 100%;
+    border: 1px solid;
+    border-collapse: collapse;
+    border-color: black;
+    align-self: center;
+}
+th{
+    background-color: green;
+    color: white;
+    border: 1px solid;
+    border-color: black;
+}
+td{
+    text-align: center;
+    border: 1px solid;
+    border-color: black;
+}
+tr:hover {background-color: blue;}
