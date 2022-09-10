@@ -48,3 +48,24 @@ td{
     border-color: black;
 }
 tr:hover {background-color: blue;}
+
+/*
+* Forms Styles
+*/
+input[type=text], input[type=email]{
+    background-color: green;
+    color: white;
+}
+
+select{
+    padding: 16px 20px;
+    border-radius: 4px;
+    background-color: green;
+    color: white;
+
+}
+input[type = submit], input[type=reset]{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
