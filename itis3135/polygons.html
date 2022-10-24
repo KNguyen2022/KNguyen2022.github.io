@@ -5,13 +5,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
         <link href = "styles/default.css" rel = "stylesheet">
+        <script type="text/javascript" src="srcipts/polygons.js"></script>
+            
+        <title>Kevin Nguyen's Keen Nighthawk | ITIS 3135 | Polygons</title>  
 
-        <title> 
-            Kevin Nguyen's Keen Nighthawk | ITIS 3135 | Home
-        </title>
-        <title>Kevin Nguyen's Keen Nighthawk | ITIS 3135 | Home</title>  
     </head>
-    <body>
+    <body onload = "validateEntry()">
         <header>
             <h1>
                 Kevin Nguyen's Keen Nighthawk | ITIS 3135 
@@ -40,6 +39,11 @@
         </header>
         <main>
             <h2>Polygons</h2>
+            <label for="userNumInput">Please input the number of sides for a random polygon with number of sides ranging from 0-10: </label>
+            <br>
+            <input type="number" id="userNumInput" name="userNumInput" min="0" max="10">
+            <br>
+            <input type="submit" value="Submit">
         </main>
         <footer>
             <br/>
@@ -53,7 +57,7 @@
                 <a href="https://www.linkedin.com/in/kevin-nguyen-2521431a0/" target="_blank">LinkedIn</a>;
             </nav>
             <br />
-            Designed by <a href = "brand.html">KN Tech</a>.
+            Designed by <a href = "https://knguyen2022.github.io/kntech.org/">KN Tech</a>.
     
             <p>
                 <a href="https://validator.w3.org/check?uri=referer">
