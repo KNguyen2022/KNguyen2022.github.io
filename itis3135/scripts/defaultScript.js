@@ -1,8 +1,10 @@
-window.alert("Hey my script is running");
+function scriptTest(){
+    alert("Hey my script is running");
+}
 
-
-// function dateAndTime(){
-//     let time= document.getElementById("date-time");
-//     let dt = new Date();
-//     time.innerHTML = dt.toLocaleTimeString();
-// }
+function dateAndTime(){
+    setInterval(() =>{
+    var dt = new Date();
+    document.getElementById('date-time').innerHTML=dt;
+    },1000);
+}
