@@ -1,7 +1,10 @@
+*{
+    font-family: Nunito;
+    font-size: normal;
+}
 body{
     color: beige;
     background-color: gray;
-    font-family: 'Nunito', sans-serif;
 }
 header, footer{
     margin-top: 50px;
@@ -47,7 +50,9 @@ td{
     border: 1px solid;
     border-color: black;
 }
-tr:hover {background-color: blue;}
+tr:hover {
+    background-color: blue;
+} */
 
 /*
 * Forms Styles
