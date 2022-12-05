@@ -1,46 +1,59 @@
-function validateEntry(){
-    let numSides = document.getElementByID("userNumInput");
-    if(numSides<=0 && numSides >=10){
-        getShape();
-    }
-    else{
-        alert("You did not enter a number within the range of 0-10")
-    }
+// Ask user for input
+let input= prompt("Please enter the amount of sides from 0-10:");
+// Convert words to number
+let numSides = parseInt(input);
+// Check if userInput is within number range
+if(numSides>=0 && numSides <11){
+    getShape(); // Runs getShape function
 }
+else{
+    alert("You did not enter a number within the range of 0-10"); // Message telling user the input is not within range
+}
+// Takes in userInput and outputs polygon sides
 function getShape(){
-    let numSidesChoice = document.getElementByID("userNumInput");
-    switch(numSidesChoice){
+    switch(numSides){
         case(1):
-            alert("Henagon has 1 Side");
+            polygonOutput = "Henagon has 1 side";
+            document.getElementById("polygonOutput").innerHTML = polygonOutput;        
         break;
         case(2):
-            alert("Digon has 2 Side");
+            polygonOutput = "Digon has 2 sides";
+            document.getElementById("polygonOutput").innerHTML = polygonOutput;
         break;
         case(3):
-            alert("Trigon has 3 Side");
+            polygonOutput = "Trigon has 3 sides";
+            document.getElementById("polygonOutput").innerHTML = polygonOutput;
         break;
         case(4):
-            alert("Tetragon has 4 Side");
+            polygonOutput = "Tetragon has 4 sides";
+            document.getElementById("polygonOutput").innerHTML = polygonOutput;
         break;
         case(5):
-            alert("Pentagon has 5 Side");
+            polygonOutput = "Pentagon has 5 sides";
+            document.getElementById("polygonOutput").innerHTML = polygonOutput;
         break;
         case(6):
-            alert("Hexagon has 6 Side");
+            polygonOutput = "Hexagon has 6 sides";
+            document.getElementById("polygonOutput").innerHTML = polygonOutput;
         break;
         case(7):
-            alert("Heptagon has 7 Side");
+            polygonOutput = "Heptagon has 7 sides";
+            document.getElementById("polygonOutput").innerHTML = polygonOutput;
         break;
         case(8):
-            alert("Octagon has 8 Side");
+            polygonOutput = "Octagon has 8 sides";
+            document.getElementById("polygonOutput").innerHTML = polygonOutput;
         break;
         case(9):
-            alert("Enneagon has 9 Side");
+            polygonOutput = "Enneagon has 9 sides";
+            document.getElementById("polygonOutput").innerHTML = polygonOutput;
         break;
         case(10):
-            alert("Decagon has 10 Side");
+            polygonOutput = "Decagon has 10 ides";
+            document.getElementById("polygonOutput").innerHTML = polygonOutput;
         break;
         default:
-            alert("Polygon has 0 sides");
+            polygonOutput = "Polygon has 0 sides";
+            document.getElementById("polygonOutput").innerHTML = polygonOutput;
     }
 }
