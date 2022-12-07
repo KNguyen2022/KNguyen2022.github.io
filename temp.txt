@@ -1,0 +1,76 @@
+*{
+    font-family: 'Open Sans';
+    font-size: normal;
+}
+body{
+    color: beige;
+    background-color: gray;
+}
+header, footer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+main{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+h1,h2,h3{
+    text-align: center;
+}
+figure{
+    text-align: center;
+}
+figcaption{
+    text-align: center;
+    font-style: italic;
+}
+nav{
+    text-align: center;
+}
+
+/* 
+* Table Styles
+*/
+table{
+    width: 100%;
+    border: 1px solid;
+    border-collapse: collapse;
+    border-color: black;
+    align-self: center;
+}
+th{
+    background-color: green;
+    color: white;
+    border: 1px solid;
+    border-color: black;
+}
+td{
+    text-align: center;
+    border: 1px solid;
+    border-color: black;
+}
+tr:hover {
+    background-color: blue;
+} 
+
+/*
+* Forms Styles
+*/
+input[type=text], input[type=email]{
+    background-color: green;
+    color: white;
+}
+
+select{
+    padding: 16px 20px;
+    border-radius: 4px;
+    background-color: green;
+    color: white;
+
+}
+input[type = submit], input[type=reset]{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
