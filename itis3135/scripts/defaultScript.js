@@ -8,6 +8,7 @@ function scriptTest(){
     let greeting = "Welcome " + nameInput + "!";
     document.getElementById("greeting").innerHTML = greeting;
     let greetMsg = "KNTech Welcomes you, " + nameInput + "!\nWe're glad you are doing " + emotionInput + "!";
+    document.getElementById("greetMsg").innerHTML = greetMsg;
 
 // Incrementing Clock
     setInterval(() =>{
