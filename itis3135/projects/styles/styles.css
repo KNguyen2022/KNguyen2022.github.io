@@ -1,0 +1,39 @@
+.logo{
+    width: 160px;
+    height: 70px;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gen-center{
+    text-align: center;
+}
+.background{
+    background-color: rgb(224 224 224);
+    width: 305px;
+}
+.font{
+    font-style: italic;
+}
+hr{
+    height: 1px;
+    background-color: rgb(192 192 192);
+    border-color: rgb(192 192 192);
+    width: 310px;
+}
+nav{
+    text-align: center;
+}
+
+/* Links */
+a:link{
+    color:rgb(64 64 64);
+}
+a:visited{
+    color: rgb(128 128 128);
+}
+a:hover{
+    color: rgb(0 0 0);
+}
