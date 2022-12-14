@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="styles/default.css">
         <title>Kevin Nguyen's Keen Nighthawk | ITIS 3135 | FirstScripts</title>         
     </head>
-    <body>
+    <body onload="promptUser()">
         <header>
             <h1>
                 Kevin Nguyen's Keen Nighthawk | ITIS 3135 
@@ -31,7 +31,7 @@
                 <a href = "tutorialCalculator.html"> Tutorial Calculator</a>
             </nav>
         </header>
-        <main> 
+        <main onload="getTodaysDate()"> 
             <h2>First Javascript</h2>
             <h3 id="greeting">Welcome</h3>
             <h4>The current time and date is <span id="date-time"></span></h4>

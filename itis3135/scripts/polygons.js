@@ -1,16 +1,19 @@
-// Ask user for input
-let input= prompt("Please enter the amount of sides from 0-10:");
-// Convert words to number
-let numSides = parseInt(input);
-// Check if userInput is within number range
-if(numSides>=0 && numSides <11){
-    getShape(); // Runs getShape function
-}
-else{
-    alert("You did not enter a number within the range of 0-10"); // Message telling user the input is not within range
+// Validates Entry
+function validateEntry(){
+    // Ask user for input
+    let input= prompt("Please enter the amount of sides from 0-10:");
+    // Convert words to number
+    let numSides = parseInt(input);
+    // Check if userInput is within number range
+    if(numSides>=0 && numSides <11){
+        getShape(numSides); // Runs getShape function
+    }
+    else{
+        alert("You did not enter a number within the range of 0-10"); // Message telling user the input is not within range
+    }
 }
 // Takes in userInput and outputs polygon sides
-function getShape(){
+function getShape(numSides){
     switch(numSides){
         case(1):
             polygonOutput = "Henagon has 1 side";

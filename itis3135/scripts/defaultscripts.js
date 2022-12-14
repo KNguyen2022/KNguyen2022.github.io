@@ -3,19 +3,20 @@ function scriptTest(){
     alert("Hey my script is running");
 }
 // Welcome Message
+function promptUser(){
     let nameInput = prompt("What is your name?");
     let emotionInput = prompt("How are you feeling?");
     let greeting = "Welcome " + nameInput + "!";
     document.getElementById("greeting").innerHTML = greeting;
     let greetMsg = "KNTech Welcomes you, " + nameInput + "!\nWe're glad you are doing " + emotionInput + "!";
     document.getElementById("greetMsg").innerHTML = greetMsg;
-
+}
 // Incrementing Clock
-    setInterval(() =>{
-    var dt = new Date();
-    document.getElementById("date-time").innerHTML=dt;
-    },1000);
-
+function getTodaysDate(){
+    const dt = new Date();
+    document.getElementById("date-time").innerHTML = dt;
+}
+setInterval(getTodaysDate, 1000);
 function displayToday(){
     var dt = new Date();
     let date = dt.toDateString();
