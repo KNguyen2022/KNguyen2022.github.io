@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
     <head>
-        <meta charset= "UTF-8">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/default.css">
-        <title>Kevin Nguyen's Keen Nighthawk | ITIS 3135 | Polygons</title>
+        <link href = "styles/default.css" rel = "stylesheet">
+        <title>Kevin Nguyen's Keen Nighthawk | ITIS 3135 | Arrays</title>  
     </head>
-    <body onload="validateEntry()"><header>
+    <body>
+        <header>
             <h1>
                 Kevin Nguyen's Keen Nighthawk | ITIS 3135 
             </h1>
@@ -31,10 +31,33 @@
             </nav>
         </header>
         <main>
-            <h2> Polygon Sides</h2>
-            <h3 id="polygonOutput">Sides</h3>
+            <h2>Arrays</h2>
+            <form name="new_employee" id="new_employee" action="#" onsubmit="return validateEntry()">
+                Employee Name: <input type="text" id="full_name">
+                <br>
+                Salary Amount: <input type="number" id="salary">
+                <br>
+                <input type="submit" value="Add Salary">
+            </form>
+            <label for="employee">Employee/Salaries</label>
+            <select name="employee" id="employee">
+                <option value="Kevin Nguyen">Kevin Nguyen</option>
+                <option value="Freddy Kroger">Freddy Kroger</option>
+                <option value="Obi-Wan Kenobi">Obi-Wan Kenobi</option>
+                <option value="Optimus Prime">Optimus Prime</option>
+                
+            </select>
+            <br>
+            <input type="button" onclick="displayResults()" value="Display Results">
+            <input type="button" onclick="displaySalary()" value="Display Salary">
+            <h3>Display Results</h3>
+            <h4 id="display_results"></h4>
+            <h3>Display Salary</h3>
+            <table id="display_salary"></table>
         </main>
+    
         <footer>
+            <script src="scripts/arrays.js"></script>
             <br/>
             <nav>
                 <a href="https://webpages.charlotte.edu/knguye71/itis3135/" target="_blank">Charlotte.edu</a>
@@ -63,7 +86,6 @@
                     <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
                 </a>
             </p>
-            <script src="scripts/polygons.js"></script>
         </footer>
     </body>
 </html>
