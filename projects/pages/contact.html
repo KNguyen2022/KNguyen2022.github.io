@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="styles/styles.css" rel="stylesheet">
+        <title>Services - Minhute</title>
+    </head>
+    <body>
+        <header>
+            <img class="logo center" src="images/Logo+Black.png">
+            <nav class="center background font">
+                <a href="about.html">About Us</a>
+                ||
+                <a href="gallery.html">Gallery</a>
+                ||
+                <a href="introduction.html">Introduction</a>
+                ||
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Contact</h2> <!-- Change to fit title of page-->
+            <form action="#" id="user_form"> <!-- Redo validation like in arrays activity-->
+                <!--First Name-->
+                <label for="fname">First Name: </label>
+                    <input type="text" id="fname" name="fname" required="true">
+                    <br>
+                <!--Lastt Name-->
+                <label for="lname">Last Name: </label>
+                    <input type="text" id="lname" name="lname" required="true">
+                    <br>
+                <!--Phone Number-->
+                <label for="phone_number">Phone Number: </label>
+                    <input type="" id="phone_number" name="phone_number" required="true">
+                    <br>
+                <!--Email-->    
+                <label for="email">Email Address: </label>
+                    <input type="email" id="email" name="email" required="true">
+                    <br>
+                <!--Text Area-->
+                <label for="text_area">Comments or Questions: </label>
+                    <br>
+                    <textarea rows="6" cols="50" name="text_area" form="user_form">
+                    Enter text here...</textarea>
+                    <br>
+                <!--Reset-->
+                <input type="reset">
+                <br>
+                <!--Submit-->
+                <input type="submit" value="Submit">
+                <br>
+            </form>
+        </main>
+        <footer>
+            <br/>
+            Designed by <a href = "https://knguyen2022.github.io/kntech.org/homePage.html">KN Tech</a>.
+    
+            <p>
+                <a href="https://validator.w3.org/check?uri=referer">
+                    <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+                </a>
+    
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+                </a>
+            </p>
+        </footer>
+    </body>
+</html>
